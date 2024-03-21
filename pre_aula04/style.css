@@ -1,0 +1,41 @@
+body {
+    background-color: #6d13c2;
+}
+
+main {
+    background-color: #9159c5;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+fieldset {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* label {
+    margin-top: 20px;
+    display: block;
+} */
+
+input[type="text"], input[type="email"] {
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+
+input[type="submit"] {
+    padding: 20px;
+    background-color: darkblue;
+}
+
+input[type="submit"]:hover {
+    background-color: lightblue;
+}
