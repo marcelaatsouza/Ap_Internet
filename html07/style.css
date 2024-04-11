@@ -1,0 +1,22 @@
+.container {
+    width: 200px;
+    height: 300px;
+    border: 2px solid red;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    /* grid-template-columns: 20px repeat(4, 1fr);*/
+    /* grid-template-columns: 80px 1fr;*/
+    /* justify-items: stretch; */
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* flex-direction: column-reverse; */
+    justify-content: space-between;
+}
+
+.gridzinho {
+    border: 1px solid;
+    text-align: center;
+    width: 200px;
+}

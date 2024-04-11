@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+            float: left;
+        }
+
+        hr {
+            clear: left;
+        }
+
+        .container {
+            display: grid;
+            width: 200px;
+            height: 300px;
+            border: 2px solid red;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .teste_grid {
+            border: 1px solid #000000;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h2>grid</h2>
+        <div class="container">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+            <div class="teste_grid">Item4</div>
+            <div class="teste_grid">Item5</div>
+        </div>
+    </article>
+
+    <hr>
+    <h2>grid-template</h2>
+    <style>
+        #grid_template_rows {
+            grid-template-rows: 100px 20px 20px 1fr 20px 20px;
+            /*define o número e o tamanho das linhas*/
+        }
+
+        #grid_template_columns {
+            grid-template-columns: 50px 40px 1fr 20px;
+            /*define o número e o tamanho das colunas*/
+        }
+    </style>
+
+    <article>
+        <div class="container" id="grid_template_rows">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+            <div class="teste_grid">Item4</div>
+            <div class="teste_grid">Item5</div>
+        </div>
+    </article>
+
+    <article>
+        <div class="container" id="grid_template_columns">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+            <div class="teste_grid">Item4</div>
+            <div class="teste_grid">Item5</div>
+        </div>
+
+    </article>
+
+
+
+    <hr>
+    <h2>justify-items</h2>
+    <style>
+        /* Aprendizado com justify-items */
+        #justify_items_start {
+            grid-template-columns: 80px 1fr;
+            justify-items: start;
+        }
+
+        #justify_items_end {
+            grid-template-columns: 80px 1fr;
+            justify-items: end;
+        }
+
+        #justify_items_center {
+            grid-template-columns: 80px 1fr;
+            justify-items: center;
+        }
+
+        #justify_items_stretch {
+            grid-template-columns: 70px 1fr;
+            justify-items: stretch;
+        }
+    </style>
+    <article>
+        <div class="container" id="justify_items_start">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="justify_items_end">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="justify_items_center">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="justify_items_stretch">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+
+    <hr>
+    <h2>align-items</h2>
+    <style>
+        /* Aprendizado com align-items */
+        #align_items_start {
+            grid-template-rows: 40px 1fr 1fr;
+            align-items: start;
+        }
+
+        #align_items_end {
+            grid-template-rows: 40px 1fr 1fr;
+            align-items: end;
+        }
+
+        #align_items_center {
+            grid-template-rows: 40px 1fr 1fr;
+            align-items: center;
+        }
+
+        #align_items_stretch {
+            grid-template-rows: 40px 1fr 1fr;
+            align-items: stretch;
+        }
+    </style>
+    <article>
+        <div class="container" id="align_items_start">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="align_items_end">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="align_items_center">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="align_items_stretch">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+
+
+    <hr>
+    <h2>justify-content</h2>
+    <style>
+        /* Aprendizado com justify-content */
+        #justify_content_start {
+            grid-template-columns: 30px 30px 30px;
+            justify-content: start;
+        }
+
+        #justify_content_end {
+            grid-template-columns: 30px 30px 30px;
+            justify-content: end;
+        }
+
+        #justify_content_center {
+            grid-template-columns: 30px 30px 30px;
+            justify-content: center;
+        }
+
+        #justify_content_space_between {
+            grid-template-columns: 30px 30px 30px;
+            justify-content: space-between;
+        }
+
+        #justify_content_space_around {
+            grid-template-columns: 30px 30px 30px;
+            justify-content: space-around;
+        }
+    </style>
+    <article>
+        <div class="container" id="justify_content_start">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="justify_content_end">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="justify_content_center">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="justify_content_space_between">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="justify_content_space_around">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+
+
+    <hr>
+
+    <h2>align-content</h2>
+    <style>
+        /* Aprendizado com align-content */
+        #align_content_start {
+            grid-template-rows: 30px 30px 30px;
+            align-content: start;
+        }
+
+        #align_content_end {
+            grid-template-rows: 30px 30px 30px;
+            align-content: end;
+        }
+
+        #align_content_center {
+            grid-template-rows: 30px 30px 30px;
+            align-content: center;
+        }
+
+        #align_content_space_between {
+            grid-template-rows: 30px 30px 30px;
+            align-content: space-between;
+        }
+
+        #align_content_space_around {
+            grid-template-rows: 30px 30px 30px;
+            align-content: space-around;
+        }
+    </style>
+    <article>
+        <div class="container" id="align_content_start">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="align_content_end">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="align_content_center">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="align_content_space_between">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+    <article>
+        <div class="container" id="align_content_space_around">
+            <div class="teste_grid">Item1</div>
+            <div class="teste_grid">Item2</div>
+            <div class="teste_grid">Item3</div>
+        </div>
+    </article>
+
+
+
+
+
+
+
+</body>
+
+</html>
